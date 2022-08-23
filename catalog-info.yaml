@@ -1,0 +1,8 @@
+catalog:
+  locations:
+    - type: url
+      target: https://github.com/snaveen1856/python_fastapi_demo/blob/dev/template.yaml
+      rules:
+        - allow: [Template]
+    - type: file
+      target: template.yaml # Backstage will expect the file to be in packages/backend/template.yaml
