@@ -1,12 +1,8 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: "Python-FastAPI-demo"
-  description: "python fastapi demo project with post and get api"
-  annotations:
-    github.com/project-slug: https://github.com/snaveen1856/python_fastapi_demo
-    backstage.io/techdocs-ref: dir:.
-spec:
-  type: service
-  lifecycle: experimental
-  owner: "guests"
+catalog:
+  locations:
+    - type: url
+      target: https://github.com/snaveen1856/python_fastapi_demo/blob/dev/template.yaml
+      rules:
+        - allow: [Template]
+    - type: file
+      target: template.yaml # Backstage will expect the file to be in packages/backend/template.yaml
