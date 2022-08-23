@@ -10,5 +10,3 @@ spec:
   type: service
   lifecycle: experimental
   owner: "guest"
-  providesApis:
-    - python_fastapi_demo
